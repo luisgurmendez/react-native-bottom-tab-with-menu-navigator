@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {
   useNavigationBuilder,
   TabRouter,
@@ -15,13 +15,12 @@ import {
   BottomTabNavigationOptions,
 } from '@react-navigation/bottom-tabs/lib/typescript/src/types';
 import PortalHost from './Portal/PortalHost';
-import MenuPlaceholderScreen, {MenuOptions, MenuProps} from './Menu';
+import MenuPlaceholderScreen, { MenuOptions, MenuProps } from './Menu';
 
 export interface TabMenuNavigationProps {
   menuOptions: MenuProps;
 }
 
-// The props accepted by the component is a combination of 3 things
 export type TabMenuNavigatorProps = DefaultNavigatorOptions<
   BottomTabNavigationOptions
 > &
@@ -56,7 +55,7 @@ const TabMenuNavigator: React.FC<TabMenuNavigatorProps> = ({
     />,
   );
 
-  const {state, descriptors, navigation} = useNavigationBuilder(TabRouter, {
+  const { state, descriptors, navigation } = useNavigationBuilder(TabRouter, {
     initialRouteName,
     backBehavior,
     children: childrenWithMenuScreen,
