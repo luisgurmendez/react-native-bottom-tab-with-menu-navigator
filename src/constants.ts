@@ -1,0 +1,1 @@
+export const FAST_ANIMATION_DURATION = 300;

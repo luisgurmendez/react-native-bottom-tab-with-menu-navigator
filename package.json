@@ -1,14 +1,32 @@
 {
   "name": "react-native-bottom-tab-with-menu-navigator",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Navigator Custom Navigation component for making Bottom Tab Navigator with a Menu",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "react-native",
+    "react-navigation",
+    "@react-navigation"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-animation-hooks": "*",
+    "react-native-svg": "*",
+    "styled-components": "*"
+  },
   "author": "Luis Gurmendez",
   "license": "MIT",
+  "devDependencies": {
+    "np": "^7.0.0",
+    "typescript": "^4.1.2"
+  },
   "dependencies": {
-    "np": "^7.0.0"
+    "react": "^17.0.1",
+    "react-native": "^0.63.3"
   }
 }
